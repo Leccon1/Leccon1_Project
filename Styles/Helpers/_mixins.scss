@@ -1,0 +1,60 @@
+@use 'functions' as *;
+@use 'sass:math';
+
+@mixin fluid-text($max: 48px, $min: 16px) {
+	font-size: fluid($max, $min);
+}
+
+@mixin flex-center($isInline: false) {
+	@if $isInline {
+		display: inline-flex;
+	} @else {
+		display: flex;
+	}
+
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin abs-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	translate: -50% -50%;
+}
+
+@mixin square($size) {
+	width: $size;
+	height: $size;
+}
+
+@mixin visually-hidden {
+	position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	margin: -1px !important;
+	border: 0 !important;
+	padding: 0 !important;
+	white-space: nowrap !important;
+	clip-path: inset(100%) !important;
+	clip: rect(0 0 0 0) !important;
+	overflow: hidden !important;
+}
+
+@mixin base-glass-object {
+	background: linear-gradient(
+		135deg,
+		rgba(160, 194, 233, 0.1),
+		rgba(255, 255, 255, 0)
+	);
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	border-radius: 20px;
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	box-shadow: 0 8px 32px 0 rgba(90, 90, 90, 0.3);
+}
+
+@mixin title-text {
+  font-family: var(--font-family-base);
+  font-weight: 700;
+}

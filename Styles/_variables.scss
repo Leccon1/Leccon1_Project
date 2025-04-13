@@ -1,0 +1,18 @@
+@use 'Helpers' as *;
+
+:root {
+	--bg-color-main: linear-gradient(
+		0deg,
+		rgba(237, 185, 208, 1) 0%,
+		rgba(160, 194, 233, 1) 100%
+	);
+
+	--color-purple: rgb(100, 50, 250);
+
+	--font-family-base: 'Comforta';
+	--font-family-accent: 'Chillax';
+
+  --max-width: 1200px;
+
+  --border-radius: 15px;
+}
