@@ -1,0 +1,50 @@
+@use 'Helpers' as *;
+
+.wrapper {
+	max-width: 1200px;
+	margin-inline: auto;
+}
+
+.logo {
+	font-size: 48px;
+	color: var(--color-purple);
+	letter-spacing: normal;
+
+	&__letter-deco {
+		color: gold;
+	}
+
+	&__letter {
+		transition: all ease-in-out;
+		transition-duration: var(--transition-duration);
+
+		&:hover {
+			transform: translateY(-5px);
+		}
+	}
+}
+
+.visually-hidden {
+	position: absolute !important;
+	width: 1px !important;
+	height: 1px !important;
+	margin: -1px !important;
+	border: 0 !important;
+	padding: 0 !important;
+	white-space: nowrap !important;
+	clip-path: inset(100%) !important;
+	clip: rect(0 0 0 0) !important;
+	overflow: hidden !important;
+}
+
+.hidden-mobile {
+  @include mobile {
+    display: none !important;
+  }
+}
+
+.visible-mobile {
+  @include mobile-above {
+    display: none !important;
+  }
+}
