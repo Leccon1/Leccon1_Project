@@ -4,45 +4,63 @@
 body {
 	font-family: var(--font-family-base);
 	background: var(--bg-color-main);
-  background-repeat: no-repeat;
-  background-size: cover;
+	background-repeat: no-repeat;
+	background-size: cover;
 
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.28;
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 1.28;
 }
 
-h1, .h1, 
-h2, .h2, 
-h3, .h3, 
-h4, .h4, 
-h5, .h5, 
-h6, .h6 {
-  font-family: var(--font-family-base);
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+	font-family: var(--font-family-base);
 	color: var(--color-purple);
-  font-weight: 700;
+	font-weight: 700;
 }
 
-h1, .h1 {
-  font-size: 48px;
+h1,
+.h1 {
+	font-size: 48px;
 }
 
-h2, .h2 {
-  font-size: 40px;
+h2,
+.h2 {
+	font-size: 40px;
 }
 
-h3, .h3 {
-  font-size: 30px;
+h3,
+.h3 {
+	font-size: 30px;
 }
 
-h4, .h4 {
-  font-size: 20px;
+h4,
+.h4 {
+	font-size: 20px;
 }
 
 p {
-  font-family: var(--font-family-accept);
+	font-family: var(--font-family-accept);
 }
 
 a {
-  text-decoration: none;
+	text-decoration: none;
+}
+
+a,
+button,
+input,
+textarea,
+svg * {
+	transition-duration: var(--transition-duration);
 }

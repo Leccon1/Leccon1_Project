@@ -1,29 +1,57 @@
 @use '../../Helpers/' as *;
 
 .header {
-  padding-top: 200px;
+	padding-top: 200px;
 
-  &__inner {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    column-gap: 40px;
-  }
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
 
-  &__menu {
-    margin-left: auto;
-    font-size: 20px;
+	&__logo {
+		align-items: center;
+		justify-content: center;
+	}
 
-    &-list {
-      display: flex;
-      align-items: center;
-      column-gap: 40px;
-    }
+	&__menu {
+		@include rectangle(750px, 75px);
+		@include base-glass-object;
 
-    &-link {
-      display: inline-flex;
-      align-items: center;
-      height: 48px;
-    }
-  }
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 20px;
+
+		&-list {
+			display: flex;
+			align-items: center;
+			column-gap: 40px;
+		}
+
+		&-link {
+			position: relative;
+			display: inline-flex;
+			align-items: center;
+			height: 48px;
+
+			@include hover {
+				&::after {
+					width: 100%;
+				}
+			}
+
+			&::after {
+				content: '';
+				position: absolute;
+				top: 100%;
+				left: 50%;
+				translate: -50%;
+				width: 0;
+				height: 2px;
+				background-color: currentColor;
+				transition-duration: inherit;
+			}
+		}
+	}
 }
