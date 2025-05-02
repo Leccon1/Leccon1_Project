@@ -24,6 +24,30 @@
 	}
 }
 
+.btn {
+	background-color: rgb(0, 139, 139, 0.1);
+	box-shadow: 0 8px 32px 0 rgba(0, 139, 139, 0.1);
+	transform: scale(0.98);
+	@include rectangle(150px, 75px);
+	color: var(--color-purple);
+	border: 1px solid rgba(255, 255, 255, 0.2);
+	border-radius: 20px;
+	font-size: 20px;
+	transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+	transform: scale(1);
+  background-color: rgb(0, 139, 139, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 139, 139, 0.15);
+}
+
+.btn:active {
+  transform: scale(1.03);
+  background-color: rgb(0, 139, 139, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(0, 139, 139, 0.2);
+}
+
 .visually-hidden {
 	position: absolute !important;
 	width: 1px !important;
@@ -38,13 +62,13 @@
 }
 
 .hidden-mobile {
-  @include mobile {
-    display: none !important;
-  }
+	@include mobile {
+		display: none !important;
+	}
 }
 
 .visible-mobile {
-  @include mobile-above {
-    display: none !important;
-  }
+	@include mobile-above {
+		display: none !important;
+	}
 }

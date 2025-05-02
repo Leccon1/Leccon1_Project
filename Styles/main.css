@@ -203,6 +203,7 @@ svg * {
   );
   --color-purple: rgb(100, 50, 250);
   --color-purple-hover: rgb(35, 15, 65);
+  --color-button-hover: white;
   --font-family-base: "Comforta";
   --font-family-accent: "Chillax";
   --max-width: 1200px;
@@ -348,6 +349,31 @@ svg * {
 }
 .logo__letter:hover {
   transform: translateY(-5px);
+}
+
+.btn {
+  background-color: rgba(0, 139, 139, 0.1);
+  box-shadow: 0 8px 32px 0 rgba(0, 139, 139, 0.1);
+  transform: scale(0.98);
+  height: 75px;
+  width: 150px;
+  color: var(--color-purple);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn:hover {
+  transform: scale(1);
+  background-color: rgba(0, 139, 139, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(0, 139, 139, 0.15);
+}
+
+.btn:active {
+  transform: scale(1.03);
+  background-color: rgba(0, 139, 139, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(0, 139, 139, 0.2);
 }
 
 .visually-hidden {
