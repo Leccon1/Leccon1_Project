@@ -39,9 +39,13 @@
 							</li>
 						</ul>
 					</nav>
-          <button class="header__sign-in btn">
-            Войти
-          </button>
+					<button
+						class="header__sign-in btn hidden-mobile"
+						type="button"
+						onclick="registrationWindow.showModal()"
+					>
+						Войти
+					</button>
 					<button
 						class="button__burger-menu burger-button visible-mobile"
 						type="button"
@@ -56,13 +60,20 @@
 			<form
 				action=""
 				method="dialog"
-				class="mobile-overlay__vlose-button-wrapper"
+				class="mobile-overlay__close-button-wrapper"
 			>
 				<button class="mobile-overlay__close-button cross-button" type="submit">
 					<span class="visually-hidden">Close navigation menu</span>
 				</button>
 			</form>
 			<div class="mobile-overlay__body">
+				<button
+					class="header__sign-in btn"
+					type="button"
+					onclick="registrationWindow.showModal()"
+				>
+					Войти
+				</button>
 				<ul class="mobile-overlay__list">
 					<li class="mobile-overlay__item">
 						<a href="" class="mobile-overlay__link">Главная</a>
@@ -80,6 +91,33 @@
 						<a href="" class="mobile-overlay__link">Контакты</a>
 					</li>
 				</ul>
+			</div>
+		</dialog>
+    <dialog class="registration-window" id="registrationWindow">
+			<form
+				action=""
+				method="dialog"
+				class="registration-window__close-button-wrapper"
+			>
+				<button
+					class="registration-window__close-button cross-button"
+					type="submit"
+				>
+					<span class="visually-hidden">Close registration menu</span>
+				</button>
+			</form>
+			<div class="registration-window__body">
+				<form id="registrationForm">
+          <label for="username">Имя пользователя:</label><br>
+          <input type="text" id="username" name="username" required><br><br>
+
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" required><br><br>
+
+          <label for="password">Пароль:</label><br>
+          <input type="password" id="password" name="password" required><br><br>
+
+          <button type="submit">Зарегистрироваться</button>
 			</div>
 		</dialog>
 	</body>
