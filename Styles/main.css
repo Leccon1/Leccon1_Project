@@ -202,6 +202,7 @@ svg * {
   	rgba(160, 194, 233, 1) 100%
   );
   --color-purple: rgb(100, 50, 250);
+  --color-purple-hover: rgb(35, 15, 65);
   --font-family-base: "Comforta";
   --font-family-accent: "Chillax";
   --max-width: 1200px;
@@ -336,7 +337,7 @@ svg * {
 .logo {
   font-size: 48px;
   color: var(--color-purple);
-  letter-spacing: normal;
+  letter-spacing: 3px;
 }
 .logo__letter-deco {
   color: gold;
@@ -383,8 +384,16 @@ svg * {
   align-items: center;
 }
 .header__logo {
+  width: 250px;
+  height: 75px;
   align-items: center;
   justify-content: center;
+  background: linear-gradient(135deg, rgba(160, 194, 233, 0.1), rgba(255, 255, 255, 0));
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(90, 90, 90, 0.3);
 }
 .header__menu {
   height: 75px;

@@ -10,8 +10,12 @@
 	}
 
 	&__logo {
+    width: 250px;
+    height: 75px;
 		align-items: center;
 		justify-content: center;
+
+    @include base-glass-object;
 	}
 
 	&__menu {
