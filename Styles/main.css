@@ -204,7 +204,7 @@ svg * {
   --color-purple: rgb(100, 50, 250);
   --color-purple-hover: rgb(35, 15, 65);
   --color-button-hover: white;
-  --font-family-base: "Comforta";
+  --font-family-base: "Comfortaa";
   --font-family-accent: "Chillax";
   --max-width: 1200px;
   --border-radius: 15px;
@@ -276,28 +276,28 @@ svg * {
 
 @font-face {
   font-family: "Comforta";
-  src: url(fonts/Comfortaa-Bold.woff2);
+  src: url(/fonts/Comfortaa-Bold.woff2);
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Comforta";
-  src: url(fonts/Comfortaa-SemiBold.woff2);
+  src: url(/fonts/Comfortaa-SemiBold.woff2);
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Comforta";
-  src: url(fonts/Comfortaa-Medium.woff2);
+  src: url(/fonts/Comfortaa-Medium.woff2);
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Comforta";
-  src: url(fonts/Comfortaa-Regular.woff2);
+  src: url(/fonts/Comfortaa-Regular.woff2);
   font-weight: 400;
   font-style: normal;
   font-display: swap;
@@ -311,21 +311,21 @@ svg * {
 }
 @font-face {
   font-family: "Chillax";
-  src: url(fonts/Chillax-Semibold.woff2);
+  src: url(/fonts/Chillax-Semibold.woff2);
   font-weight: 600;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Chillax";
-  src: url(fonts/Chillax-Medium.woff2);
+  src: url(/fonts/Chillax-Medium.woff2);
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Chillax";
-  src: url(fonts/Chillax-Regular.woff2);
+  src: url(/fonts/Chillax-Regular.woff2);
   font-weight: 400;
   font-style: normal;
   font-display: swap;
